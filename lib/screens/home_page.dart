@@ -131,7 +131,10 @@ class HomePage extends StatelessWidget {
                         child: Text(
                           Constants.history,
                           textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.headline3,
+                          style:
+                              Theme.of(context).textTheme.headline4!.copyWith(
+                                    color: const Color(Styles.white),
+                                  ),
                         ),
                       ),
                       Positioned(
@@ -176,19 +179,19 @@ class HomePage extends StatelessWidget {
                                     children: [
                                       Container(
                                         width: Styles.padding15,
-                                        color: Colors.blue,
+                                        color: Colors.deepPurple,
                                         height: snapshot.data![index].blue
                                             .toDouble(),
                                       ),
                                       Container(
                                         width: Styles.padding15,
-                                        color: Colors.pink,
+                                        color: Colors.pinkAccent,
                                         height: snapshot.data![index].pink
                                             .toDouble(),
                                       ),
                                       Container(
                                         width: Styles.padding15,
-                                        color: Colors.green,
+                                        color: Colors.greenAccent,
                                         height: snapshot.data![index].green
                                             .toDouble(),
                                       )
